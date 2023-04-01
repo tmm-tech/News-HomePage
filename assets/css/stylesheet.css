@@ -1,0 +1,225 @@
+body {
+    background-color: hsl(36, 100%, 99%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-rows: 370px 50px 100px;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr) 350px;
+}
+
+
+/* navigation bar with website photo */
+
+nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: hsl(36, 100%, 99%);
+    padding: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: #737279;
+    text-decoration: none;
+    font-family: 'Inter-VariableFont', sans-serif;
+}
+
+nav ul li a:hover {
+    color: hsl(5, 85%, 63%);
+    transition: .3s;
+}
+
+
+/* home tab */
+
+.home {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.home img.desktop-only {
+    max-width: 100%;
+    max-height: 400px;
+}
+
+
+/* news tab */
+
+.news {
+    background-color: hsl(240, 100%, 5%);
+    border: 1px solid hsl(240, 100%, 5%);
+    grid-row: 1/4;
+    display: inline-block;
+    grid-column: 4/4;
+}
+
+.newdetails h1 {
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 200px;
+    margin-left: 15px;
+    color: hsl(35, 77%, 62%);
+}
+
+.newdetails .news1 h1 {
+    color: white;
+    font-size: 25px;
+    font-family: 'Inter-Bold', sans-serif;
+}
+
+.newdetails .news1 p {
+    color: hsl(236, 13%, 42%);
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 15px;
+    font-family: 'Inter-Bold', sans-serif;
+}
+
+hr.line {
+    border-top: 1px solid hsl(0, 0%, 45%);
+    margin: 15px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.newdetails .news2 h1 {
+    color: white;
+    font-size: 25px;
+    font-family: 'Inter-Bold', sans-serif;
+}
+
+.newdetails .newsitem h1:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.newdetails .news2 p {
+    color: hsl(236, 13%, 42%);
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 15px;
+    font-family: 'Inter-Bold', sans-serif;
+}
+
+.newdetails .news3 h1 {
+    color: white;
+    font-size: 25px;
+    font-family: 'Inter-Bold', sans-serif;
+}
+
+.newdetails .news3 p {
+    color: hsl(236, 13%, 42%);
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 15px;
+    font-family: 'Inter-Bold', sans-serif;
+}
+
+
+/* info tab */
+
+.info {
+    grid-row: 2/4;
+    grid-column: 1/4;
+}
+
+.info h1 {
+    font-family: 'Inter-ExtraBold', sans-serif;
+    color: hsl(240, 100%, 5%);
+    font-size: 40px;
+    text-align: start;
+    font-weight: 800;
+    margin-top: -10px;
+    width: 25%;
+}
+
+
+/* update tab */
+
+.update {
+    grid-row: 2/4;
+    grid-column: 2/4;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+div.info p {
+    font-size: 15px;
+    line-height: normal;
+    font-family: 'Inter-Bold', sans-serif;
+    text-align: start;
+    color: hsl(236, 13%, 42%);
+}
+
+div.moreinfo2 .button-read {
+    font-family: 'Inter-Bold', sans-serif;
+    color: white;
+    border: 0 solid hsl(5, 85%, 63%);
+    height: 40px;
+    width: 135px;
+    font-size: 10px;
+    background-color: hsl(5, 85%, 63%);
+}
+
+div.moreinfo2 .button-read:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+
+/* trending tab */
+
+.trending {
+    grid-column: 1/-1;
+}
+
+
+/* font family */
+
+@font-face {
+    font-family: 'Inter-VariableFont';
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-ExtraBold';
+    src: url(assets/fonts/static/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://fonts.google.com/specimen/Inter');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://fonts.google.com/specimen/Inter');
+    font-weight: 800;
+}
